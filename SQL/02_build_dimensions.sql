@@ -1,7 +1,6 @@
--- =========================================================================
 -- FILE 02: BUILD DIMENSIONS
 -- Purpose: Extract unique descriptive entities and enforce primary keys.
--- =========================================================================
+-- 
 
 USE superstore_db;
 
@@ -32,6 +31,7 @@ INSERT INTO dim_product (product_id, product_name, category, sub_category)
 SELECT DISTINCT product_id, product_name, category, sub_category 
 FROM raw_staging;
 
+-- 3. Geography Dimension 
 CREATE TABLE IF NOT EXISTS dim_geography (
     geography_id INT AUTO_INCREMENT PRIMARY KEY,
     country VARCHAR(100) NOT NULL,
