@@ -56,4 +56,4 @@ END//
 DELIMITER ;
 
 -- Execute data loading
-CALL populate_date_dimension('2014-01-01', '2030-12-31');
+CALL populate_date_dimension('2014-01-01', '2018-01-31');
