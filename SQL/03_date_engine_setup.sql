@@ -1,7 +1,6 @@
--- =========================================================================
 -- FILE 03: DATE ENGINE SETUP
 -- Purpose: Compile calendar structure and populate continuous time matrix.
--- =========================================================================
+-- 
 
 USE superstore_db;
 
